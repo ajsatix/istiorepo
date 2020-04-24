@@ -76,7 +76,7 @@
             "ownerSide": true
         }
     ],
-    "changelogDate": "20200424051400",
+    "changelogDate": "20200424185000",
     "javadoc": "Entities for Store Gateway",
     "entityTableName": "customer",
     "dto": "no",

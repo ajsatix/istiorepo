@@ -7,7 +7,6 @@ import io.github.jhipster.domain.util.JSR310DateConverters.*;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.cache.CacheManager;
 import org.springframework.cloud.Cloud;
 import org.springframework.cloud.CloudException;
 import org.springframework.cloud.config.java.AbstractCloudConfig;

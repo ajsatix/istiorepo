@@ -44,7 +44,7 @@
             "otherEntityField": "name"
         }
     ],
-    "changelogDate": "20200424051500",
+    "changelogDate": "20200424185100",
     "javadoc": "Entities for product microservice",
     "entityTableName": "product",
     "dto": "no",

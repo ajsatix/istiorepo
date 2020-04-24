@@ -1,7 +1,7 @@
 {
   "generator-jhipster": {
     "authenticationType": "jwt",
-    "cacheProvider": "hazelcast",
+    "cacheProvider": "no",
     "serverPort": "8083",
     "serviceDiscoveryType": false,
     "skipUserManagement": true,
@@ -25,9 +25,9 @@
     "packageName": "com.jhipster.demo.notification",
     "packageFolder": "com/jhipster/demo/notification",
     "jhipsterVersion": "6.8.0",
-    "creationTimestamp": 1587751740324,
+    "creationTimestamp": 1587756720075,
     "clientPackageManager": "npm",
-    "jwtSecretKey": "MjFjOTc0ZmE0YmRkNGExN2JhZThkZTZmOTgwOWNmYjUzOTE0NWIxYzBkZTVhNmRhNDc2NjcwNDg2ODRhYTg0OGFjY2IyZjM5MDNhNmYwZTM1MzAxOTdkYThhMDBlNmZiZjUyMzIxMzc2NmQ4NmQ4OTc2YjRhNzg1MzkzZTgyNzU=",
+    "jwtSecretKey": "ZmY4ODhhYmM4MDE0NTUxNzYxZDdlZDdiMzhiOWM2YjFjOWQ5MmQ5MjNiZGE0OTI3YTg1NDM1YmZiOWE2MzY3Mjg4ZTg1YjdkMjYwYzJkZjQ3OWNjMGQ1OTA5YTJhZDgyNGU0NmRkYzNjNjAwMjY2Mjk4NGViZjAzZGFiOTI0ZWY=",
     "embeddableLaunchScript": false,
     "entitySuffix": "",
     "dtoSuffix": "DTO",

@@ -171,7 +171,6 @@ dependencies {
     // to use a SNAPSHOT release instead of a stable release
     implementation group: "io.github.jhipster", name: "jhipster-framework"
     implementation "javax.annotation:javax.annotation-api"
-    implementation "org.springframework.boot:spring-boot-starter-cache"
     implementation "io.dropwizard.metrics:metrics-core"
     implementation "io.micrometer:micrometer-registry-prometheus"
     implementation "net.logstash.logback:logstash-logback-encoder"
@@ -180,9 +179,6 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-annotations"
     implementation "com.fasterxml.jackson.core:jackson-databind"
     implementation "com.fasterxml.jackson.module:jackson-module-afterburner"
-    implementation "com.hazelcast:hazelcast"
-    implementation "com.hazelcast:hazelcast-spring"
-    implementation "javax.cache:cache-api"
     implementation "org.apache.commons:commons-lang3"
     implementation "commons-io:commons-io"
     implementation "javax.transaction:javax.transaction-api"

@@ -43,7 +43,7 @@
             "relationshipName": "orderItem"
         }
     ],
-    "changelogDate": "20200424051700",
+    "changelogDate": "20200424185300",
     "entityTableName": "product_order",
     "dto": "no",
     "pagination": "pagination",

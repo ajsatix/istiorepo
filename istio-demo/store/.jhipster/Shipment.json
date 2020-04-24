@@ -27,7 +27,7 @@
             "otherEntityField": "code"
         }
     ],
-    "changelogDate": "20200424052000",
+    "changelogDate": "20200424185600",
     "entityTableName": "shipment",
     "dto": "no",
     "pagination": "pagination",

@@ -6,6 +6,7 @@ application {
     serviceDiscoveryType no
     authenticationType jwt
     prodDatabaseType mysql
+    cacheProvider ehcache
     buildTool gradle
     clientFramework react
     useSass true
@@ -52,6 +53,7 @@ application {
     serviceDiscoveryType no
     authenticationType jwt
     databaseType mongodb
+    cacheProvider no
     enableHibernateCache false
     buildTool gradle
     serverPort 8083

@@ -14,12 +14,12 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20200424051500_added_entity_Product.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20200424051600_added_entity_ProductCategory.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20200424051700_added_entity_ProductOrder.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20200424051800_added_entity_OrderItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200424185100_added_entity_Product.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200424185200_added_entity_ProductCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200424185300_added_entity_ProductOrder.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200424185400_added_entity_OrderItem.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
-    <include file="config/liquibase/changelog/20200424051500_added_entity_constraints_Product.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20200424051800_added_entity_constraints_OrderItem.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200424185100_added_entity_constraints_Product.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200424185400_added_entity_constraints_OrderItem.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

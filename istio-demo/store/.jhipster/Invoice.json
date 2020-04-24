@@ -58,7 +58,7 @@
             "relationshipName": "shipment"
         }
     ],
-    "changelogDate": "20200424051900",
+    "changelogDate": "20200424185500",
     "javadoc": "Entities for Invoice microservice",
     "entityTableName": "invoice",
     "dto": "no",
