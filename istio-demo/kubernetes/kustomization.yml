@@ -1,0 +1,87 @@
+commonLabels:
+  app.kubernetes.io/genereted-by: JHipster
+
+namespace: jhipster-demo
+
+resources:
+  - namespace.yml
+  # Individual apps
+  - store/store-deployment.yml
+  - store/store-service.yml
+  - store/store-mysql.yml
+  - store/store-gateway.yml
+  - store/jwt-secret.yml
+  - store/store-destination-rule.yml
+  - store/store-virtual-service.yml
+  - invoice/invoice-deployment.yml
+  - invoice/invoice-service.yml
+  - invoice/invoice-mysql.yml
+  - invoice/jwt-secret.yml
+  - invoice/invoice-destination-rule.yml
+  - invoice/invoice-virtual-service.yml
+  - notification/notification-deployment.yml
+  - notification/notification-service.yml
+  - notification/notification-mongodb.yml
+  - notification/jwt-secret.yml
+  - notification/notification-destination-rule.yml
+  - notification/notification-virtual-service.yml
+  - product/product-deployment.yml
+  - product/product-service.yml
+  - product/product-mysql.yml
+  - product/jwt-secret.yml
+  - product/product-destination-rule.yml
+  - product/product-virtual-service.yml
+  # service discovery eureka/consul
+  # istio
+  - istio/grafana-gateway.yml
+  - istio/zipkin-gateway.yml
+  - istio/kiali-gateway.yml
+
+patchesJson6902:
+  - target:
+      version: v1
+      kind: Namespace
+      name: jhipster-demo
+    path: patch/istio-label.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      kind: Gateway
+      name: grafana-observability-gateway
+      namespace: jhipster-demo
+    path: patch/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      name: grafana-gw-virtualservice
+      kind: VirtualService
+      namespace: jhipster-demo
+    path: patch/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      kind: Gateway
+      name: kiali-observability-gateway
+      namespace: jhipster-demo
+    path: patch/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      name: kiali-gw-virtualservice
+      kind: VirtualService
+      namespace: jhipster-demo
+    path: patch/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      kind: Gateway
+      name: zipkin-observability-gateway
+      namespace: jhipster-demo
+    path: patch/istio-namespace.yml
+  - target:
+      group: networking.istio.io
+      version: v1alpha3
+      name: zipkin-gw-virtualservice
+      kind: VirtualService
+      namespace: jhipster-demo
+    path: patch/istio-namespace.yml

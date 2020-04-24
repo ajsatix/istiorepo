@@ -1,0 +1,21 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: gcr.io/kloudlearn-staging/store
+      context: ../store
+      jib: {}
+    - image: gcr.io/kloudlearn-staging/invoice
+      context: ../invoice
+      jib: {}
+    - image: gcr.io/kloudlearn-staging/notification
+      context: ../notification
+      jib: {}
+    - image: gcr.io/kloudlearn-staging/product
+      context: ../product
+      jib: {}
+  tagPolicy:
+    envTemplate:
+      template: '{{.IMAGE_NAME}}:latest'
+deploy:
+  kustomize: {}

@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "deploymentType": "kubernetes",
+    "gatewayType": "zuul",
+    "monitoring": "no",
+    "directoryPath": "../",
+    "appsFolders": ["store", "invoice", "notification", "product"],
+    "clusteredDbApps": [],
+    "consoleOptions": [],
+    "serviceDiscoveryType": false,
+    "dockerRepositoryName": "gcr.io/kloudlearn-staging",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "jhipster-demo",
+    "kubernetesServiceType": "Ingress",
+    "ingressDomain": "35.202.31.14.nip.io",
+    "istio": true,
+    "jwtSecretKey": "OGVhMTc0YTY3NTE3YWYwMGQ1NTVmZGMwMDZmMGVmNDkwZWFiYmUwMDQyNTM5YjJmOTYzNGQ3MDAxZTU5OWY0NmJiOTY5ODc4OTVmYWM4YmU4NjMwZmVmYjNkNTVjMDY2MWZkZg=="
+  }
+}
